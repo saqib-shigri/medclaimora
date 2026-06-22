@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ========== PRIMARY SEO TAGS ========== -->
+  <title>Medical Billing Blog | RCM Tips, Coding Updates & Industry Insights | MedClaimora</title>
+  <meta name="description"
+    content="Latest insights, tips, and updates on medical billing, revenue cycle management, denial management, coding updates, and healthcare industry trends.">
+  <meta name="keywords"
+    content="medical billing blog, RCM tips, denial management, medical coding updates, healthcare revenue, practice management">
+  <meta name="author" content="Kashif Hussain - MedClaimora">
+  <meta name="robots" content="index, follow">
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link rel="canonical" href="https://medclaimora.com/blog.html" />
+
+  <!-- ========== OPEN GRAPH TAGS ========== -->
+  <meta property="og:title" content="Medical Billing Blog | RCM Tips & Industry Insights | MedClaimora">
+  <meta property="og:description"
+    content="Expert insights, tips, and updates on medical billing, revenue cycle management, denial management, and more.">
+  <meta property="og:url" content="https://medclaimora.com/blog.html">
+  <meta property="og:type" content="website">
+
+  <!-- ========== SCHEMA MARKUP - Blog ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "MedClaimora Medical Billing Blog",
+      "description": "Expert insights and tips on medical billing, RCM, denial management, and industry updates.",
+      "url": "https://medclaimora.com/blog.html",
+      "publisher": {
+        "@type": "MedicalBusiness",
+        "name": "MedClaimora"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/image/favicon.png">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      padding: 120px 0 60px;
+      text-align: center;
+      color: white;
+    }
+
+    .page-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .back-to-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 30px;
+      transition: 0.3s;
+      opacity: 0.8;
+    }
+
+    .back-to-home:hover {
+      opacity: 1;
+      gap: 12px;
+      color: white;
+    }
+
+    .blog-list {
+      padding: 60px 0;
+    }
+
+    .blog-list-item {
+      display: flex;
+      gap: 30px;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s;
+      border: 1px solid rgba(10, 92, 140, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .blog-list-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .blog-list-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .blog-list-content {
+      flex: 1;
+    }
+
+    .blog-list-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 12px;
+      font-size: 0.8rem;
+      color: var(--gray-light);
+    }
+
+    .blog-list-meta i {
+      margin-right: 5px;
+    }
+
+    .blog-list-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+    }
+
+    .blog-list-content h2 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .blog-list-content h2 a:hover {
+      color: var(--primary);
+    }
+
+    .blog-list-content p {
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .read-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .read-more-btn:hover {
+      gap: 12px;
+      color: var(--secondary);
+    }
+
+    .blog-categories {
+      background: var(--light);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+
+    .blog-categories h3 {
+      margin-bottom: 15px;
+      color: var(--primary-dark);
+    }
+
+    .blog-categories ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .blog-categories li a {
+      display: inline-block;
+      padding: 5px 15px;
+      background: white;
+      border-radius: 50px;
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: 0.3s;
+    }
+
+    .blog-categories li a:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .search-box {
+      background: var(--light);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+
+    .popular-posts {
+      background: var(--light);
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .popular-posts h3 {
+      margin-bottom: 15px;
+      color: var(--primary-dark);
+    }
+
+    .popular-post-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .popular-post-item:last-child {
+      border-bottom: none;
+    }
+
+    .popular-post-item a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .popular-post-item a:hover {
+      color: var(--primary);
+    }
+
+    .blog-grid-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="navbar-logo"><a href="index.html"><img src="/image/logo.png"
+            alt="MedClaimora Logo - Medical Billing Blog"></a></div>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="services.html"><i class="fas fa-file-invoice-dollar"></i> Medical Billing</a>
+            <a href="services.html"><i class="fas fa-calendar-alt"></i> Practice Management</a>
+            <a href="services.html"><i class="fas fa-code"></i> Medical Coding</a>
+            <a href="services.html"><i class="fas fa-credit-card"></i> Patient Collections</a>
+            <a href="services.html"><i class="fas fa-id-card"></i> Credentialing</a>
+            <a href="services.html"><i class="fas fa-chart-line"></i> RCM Analytics</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Specialties <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="specialties.html"><i class="fas fa-brain"></i> Mental Health</a>
+            <a href="specialties.html"><i class="fas fa-heartbeat"></i> Internal Medicine</a>
+            <a href="specialties.html"><i class="fas fa-truck-medical"></i> Urgent Care</a>
+            <a href="specialties.html"><i class="fas fa-spine"></i> Pain Management</a>
+          </div>
+        </div>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#faq">FAQs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-quote.html" class="btn btn-primary">Get Quote →</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fas fa-times"></i></button>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+    <a href="specialties.html"><i class="fas fa-stethoscope"></i> Specialties</a>
+    <div class="drawer-divider"></div>
+    <a href="index.html#why"><i class="fas fa-question-circle"></i> Why Us</a>
+    <a href="index.html#testimonials"><i class="fas fa-star"></i> Testimonials</a>
+    <a href="index.html#faq"><i class="fas fa-question"></i> FAQs</a>
+    <div class="drawer-divider"></div>
+    <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <div class="drawer-divider"></div>
+    <a href="javascript:void(0)"
+      onclick="window.location.href='index.html#contact'; document.getElementById('mobileDrawer').classList.remove('open'); document.getElementById('drawerOverlay').classList.remove('open');"
+      class="btn btn-primary" id="mobileWaBtn"><i class="fas fa-dollar-sign"></i> Get Quote</a>
+  </div>
+
+  <div class="float-wa" id="floatWhatsAppBtn"><i class="fab fa-whatsapp"></i></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1 data-aos="fade-up">Medical Billing Blog</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Expert insights, tips, and updates to optimize your revenue cycle</p>
+      </div>
+    </section>
+
+    <div class="container blog-list">
+      <div class="blog-grid-layout">
+        <div>
+          <!-- Blog posts - same content -->
+          <div class="blog-list-item" data-aos="fade-up">
+            <div class="blog-list-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="blog-list-content">
+              <div class="blog-list-meta">
+                <span><i class="far fa-calendar-alt"></i> June 15, 2024</span>
+                <span><i class="far fa-clock"></i> 5 min read</span>
+                <span><i class="fas fa-tag"></i> Denial Management</span>
+              </div>
+              <h2><a href="blog-single.html?id=1">Top 5 Denial Management Strategies for 2024</a></h2>
+              <p>Learn how to reduce claim denials and improve your revenue cycle efficiency with these proven
+                strategies from industry experts.</p>
+              <a href="blog-single.html?id=1" class="read-more-btn">Read Full Article <i
+                  class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Add remaining blog posts... -->
+          <div style="text-align: center; margin-top: 50px;">
+            <a href="#" class="btn btn-outline" style="margin: 0 5px;">1</a>
+            <a href="#" class="btn btn-outline" style="margin: 0 5px;">2</a>
+            <a href="#" class="btn btn-outline" style="margin: 0 5px;">3</a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="search-box">
+            <h3><i class="fas fa-search"></i> Search Blog</h3>
+            <input type="text" placeholder="Search articles..." id="searchInput">
+          </div>
+
+          <div class="blog-categories">
+            <h3><i class="fas fa-folder-open"></i> Categories</h3>
+            <ul>
+              <li><a href="#">Denial Management (8)</a></li>
+              <li><a href="#">Medical Coding (12)</a></li>
+              <li><a href="#">Revenue Cycle (15)</a></li>
+              <li><a href="#">Compliance (6)</a></li>
+              <li><a href="#">Industry News (10)</a></li>
+              <li><a href="#">Best Practices (18)</a></li>
+            </ul>
+          </div>
+
+          <div class="popular-posts">
+            <h3><i class="fas fa-fire"></i> Popular Posts</h3>
+            <div class="popular-post-item"><i class="fas fa-chart-line" style="color: var(--primary);"></i><a
+                href="blog-single.html?id=1">Top 5 Denial Management Strategies</a></div>
+            <div class="popular-post-item"><i class="fas fa-code" style="color: var(--primary);"></i><a
+                href="blog-single.html?id=2">2024 Medical Coding Updates</a></div>
+            <div class="popular-post-item"><i class="fas fa-shield-alt" style="color: var(--primary);"></i><a
+                href="blog-single.html?id=3">HIPAA Compliance Checklist</a></div>
+            <div class="popular-post-item"><i class="fas fa-dollar-sign" style="color: var(--primary);"></i><a
+                href="blog-single.html?id=4">Maximize Your Revenue Cycle</a></div>
+          </div>
+
+          <div class="popular-posts" style="margin-top: 30px; background: var(--gradient-blue); color: white;">
+            <h3 style="color: white;"><i class="fas fa-envelope"></i> Subscribe</h3>
+            <p style="font-size: 0.85rem; margin-bottom: 15px;">Get weekly medical billing tips straight to your inbox.
+            </p>
+            <form id="sidebarNewsletter">
+              <input type="email" placeholder="Your email"
+                style="width: 100%; padding: 10px; border-radius: 50px; border: none; margin-bottom: 10px;">
+              <button type="submit" class="btn btn-primary"
+                style="background: white; color: var(--primary); width: 100%;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo"><img src="/image/logo.png" alt="MedClaimora Logo">
+          <div class="footer-logo-text">Professional Medical Billing Solutions</div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Quick Links</strong></p><a href="index.html">Home</a><a href="services.html">Services</a><a
+            href="specialties.html">Specialties</a><a href="index.html#why">Why Us</a><a href="blog.html">Blog</a><a
+            href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <p><strong>Contact</strong></p>
+          <div class="footer-contact-icons">
+            <p><i class="fas fa-phone-alt"></i> +92 323 9132469</p>
+            <p><i class="fas fa-envelope"></i> info@medclaimora.com</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Certifications</strong></p>
+          <p>✓ HIPAA Compliant</p>
+          <p>✓ SOC 2 Type II</p>
+          <p>✓ GDPR Ready</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2026 MedClaimora | Led by Kashif Hussain</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+    const menuBtn = document.getElementById('menuBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    function closeMobileDrawer() {
+      mobileDrawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+      if (menuBtn) menuBtn.classList.remove('open');
+    }
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (mobileDrawer.classList.contains('open')) {
+          closeMobileDrawer();
+        } else {
+          mobileDrawer.classList.add('open');
+          drawerOverlay.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          if (menuBtn) menuBtn.classList.add('open');
+        }
+      });
+    }
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+    }
+    if (drawerOverlay) {
+      drawerOverlay.addEventListener('click', closeMobileDrawer);
+    }
+
+    document.getElementById('floatWhatsAppBtn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open('https://wa.me/923239132469?text=Hello%20MedClaimora', '_blank');
+    });
+  </script>
+</body>
+
+</html>

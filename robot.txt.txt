@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /image/
+Disallow: /thank-you.html
+Sitemap: https://medclaimora.com/sitemap.xml
+
+# Allow Google to crawl everything
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /

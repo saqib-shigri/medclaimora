@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ========== PRIMARY SEO TAGS ========== -->
+  <title>Medical Billing Specialties | Mental Health, Internal Medicine & More | MedClaimora</title>
+  <meta name="description" content="Expert medical billing services for Mental Health, Internal Medicine, Urgent Care, Pain Management, and more specialties. Get specialized RCM solutions.">
+  <meta name="keywords" content="mental health billing, internal medicine billing, urgent care billing, pain management billing, medical billing specialties, RCM for specialties">
+  <meta name="author" content="Kashif Hussain - MedClaimora">
+  <meta name="robots" content="index, follow">
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link rel="canonical" href="https://medclaimora.com/specialties.html" />
+
+  <!-- ========== OPEN GRAPH TAGS ========== -->
+  <meta property="og:title" content="Medical Billing Specialties | Mental Health, Internal Medicine & More | MedClaimora">
+  <meta property="og:description" content="Specialized medical billing services for Mental Health, Internal Medicine, Urgent Care, Pain Management, and more.">
+  <meta property="og:url" content="https://medclaimora.com/specialties.html">
+  <meta property="og:type" content="website">
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Medical Billing Specialties",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "MedClaimora"
+      },
+      "description": "Specialized medical billing and RCM services for Mental Health, Internal Medicine, Urgent Care, and Pain Management practices."
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/image/favicon.png">
+  <style>
+    .page-hero { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); padding: 120px 0 60px; text-align: center; color: white; }
+    .page-hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 700; }
+    .page-hero p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .back-to-home { display: inline-flex; align-items: center; gap: 8px; color: white; text-decoration: none; margin-bottom: 30px; transition: 0.3s; font-size: 0.9rem; }
+    .back-to-home:hover { gap: 12px; opacity: 0.8; }
+    .specialties-container { padding: 60px 24px; }
+    .specialties-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+    .specialty-card { background: #ffffff; border-radius: 20px; padding: 30px; transition: all 0.3s ease; border: 1px solid #eef2f6; }
+    .specialty-card:hover { border-color: var(--primary); box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1); transform: translateY(-4px); }
+    .specialty-icon { width: 55px; height: 55px; background: var(--primary-light); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; transition: all 0.3s ease; }
+    .specialty-icon i { font-size: 1.6rem; color: var(--primary); transition: all 0.3s ease; }
+    .specialty-card:hover .specialty-icon { background: var(--primary); }
+    .specialty-card:hover .specialty-icon i { color: white; }
+    .specialty-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; }
+    .specialty-card p { color: #5a6e8a; line-height: 1.6; font-size: 0.9rem; margin-bottom: 20px; }
+    .specialty-features { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eef2f6; }
+    .feature-tag { background: #f8fafc; padding: 5px 12px; border-radius: 30px; font-size: 0.7rem; color: var(--primary); font-weight: 500; transition: all 0.2s ease; }
+    .specialty-card:hover .feature-tag { background: var(--primary-light); }
+    .cta-wrapper { text-align: center; margin-top: 50px; padding-top: 20px; }
+    .btn-consult { background: var(--primary); color: white; padding: 14px 38px; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; box-shadow: 0 4px 12px rgba(10, 92, 140, 0.25); }
+    .btn-consult:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10, 92, 140, 0.3); gap: 14px; }
+    @media (max-width: 900px) { .specialties-grid { grid-template-columns: 1fr; gap: 25px; } }
+    @media (max-width: 768px) { .page-hero h1 { font-size: 2rem; } .specialty-card { padding: 22px; } .specialty-card h3 { font-size: 1.2rem; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="navbar-logo"><a href="index.html"><img src="/image/logo.png" alt="MedClaimora Logo - Medical Billing Specialties"></a></div>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown"><a href="services.html" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu"><a href="services.html">Medical Billing</a><a href="services.html">Practice Management</a><a href="services.html">Medical Coding</a><a href="services.html">Patient Collections</a><a href="services.html">Credentialing</a><a href="services.html">RCM Analytics</a></div>
+        </div>
+        <div class="dropdown"><a href="specialties.html" class="dropdown-toggle">Specialties <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu"><a href="specialties.html">Mental Health</a><a href="specialties.html">Internal Medicine</a><a href="specialties.html">Urgent Care</a><a href="specialties.html">Pain Management</a></div>
+        </div>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#faq">FAQs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0)" onclick="window.location.href='index.html#contact'" class="btn btn-primary">Get Quote →</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fas fa-times"></i></button>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+    <a href="specialties.html"><i class="fas fa-stethoscope"></i> Specialties</a>
+    <div class="drawer-divider"></div>
+    <a href="index.html#why"><i class="fas fa-question-circle"></i> Why Us</a>
+    <a href="index.html#testimonials"><i class="fas fa-star"></i> Testimonials</a>
+    <a href="index.html#faq"><i class="fas fa-question"></i> FAQs</a>
+    <div class="drawer-divider"></div>
+    <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <div class="drawer-divider"></div>
+    <a href="javascript:void(0)" onclick="window.location.href='index.html#contact'; document.getElementById('mobileDrawer').classList.remove('open'); document.getElementById('drawerOverlay').classList.remove('open');" class="btn btn-primary" id="mobileWaBtn"><i class="fas fa-dollar-sign"></i> Get Quote</a>
+  </div>
+
+  <div class="float-wa" id="floatWhatsAppBtn"><i class="fab fa-whatsapp"></i></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1 data-aos="fade-up">Our Specialties</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Specialized billing expertise across multiple medical fields</p>
+      </div>
+    </section>
+
+    <div class="container specialties-container">
+      <div class="specialties-grid">
+        <div class="specialty-card" data-aos="fade-up">
+          <div class="specialty-icon"><i class="fas fa-brain"></i></div>
+          <h3>Mental Health Billing</h3>
+          <p>Specialized medical billing services for mental health professionals including psychiatrists, psychologists, therapists, and counselors.</p>
+          <div class="specialty-features">
+            <span class="feature-tag">Psychiatry Coding</span>
+            <span class="feature-tag">Therapy Coding</span>
+            <span class="feature-tag">Telehealth Billing</span>
+            <span class="feature-tag">Insurance Verification</span>
+          </div>
+        </div>
+
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="specialty-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Internal Medicine Billing</h3>
+          <p>Comprehensive billing solutions for internal medicine practices. We handle everything from preventive care visits to chronic disease management.</p>
+          <div class="specialty-features">
+            <span class="feature-tag">E/M Coding</span>
+            <span class="feature-tag">Chronic Care Mgmt</span>
+            <span class="feature-tag">Preventive Services</span>
+            <span class="feature-tag">Wellness Visits</span>
+          </div>
+        </div>
+
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="specialty-icon"><i class="fas fa-truck-medical"></i></div>
+          <h3>Urgent Care Billing</h3>
+          <p>Fast and accurate billing for urgent care centers. Specialized in high-volume, quick-turnaround claims processing for walk-in clinics.</p>
+          <div class="specialty-features">
+            <span class="feature-tag">Quick Claim Submission</span>
+            <span class="feature-tag">Occupational Medicine</span>
+            <span class="feature-tag">Worker's Comp</span>
+            <span class="feature-tag">Emergency Coding</span>
+          </div>
+        </div>
+
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="specialty-icon"><i class="fas fa-spine"></i></div>
+          <h3>Pain Management Billing</h3>
+          <p>Expert coding for interventional pain procedures, medication management, and therapy services for maximum reimbursement.</p>
+          <div class="specialty-features">
+            <span class="feature-tag">Interventional Coding</span>
+            <span class="feature-tag">Medication Mgmt</span>
+            <span class="feature-tag">Therapy Billing</span>
+            <span class="feature-tag">Modifier Expertise</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-wrapper">
+        <a href="javascript:void(0)" onclick="window.location.href='index.html#contact'" class="btn-consult">
+          Get Free Consultation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo"><img src="/image/logo.png" alt="MedClaimora Logo">
+          <div class="footer-logo-text">Professional Medical Billing Solutions</div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Quick Links</strong></p>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="specialties.html">Specialties</a>
+          <a href="index.html#why">Why Us</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#faq">FAQs</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <p><strong>Contact</strong></p>
+          <div class="footer-contact-icons">
+            <p><i class="fas fa-phone-alt"></i> +92 323 9132469</p>
+            <p><i class="fas fa-envelope"></i> info@medclaimora.com</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Certifications</strong></p>
+          <p>✓ HIPAA Compliant</p>
+          <p>✓ SOC 2 Type II</p>
+          <p>✓ GDPR Ready</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2026 MedClaimora | Led by Kashif Hussain</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 600, once: true, offset: 100 });
+    const menuBtn = document.getElementById('menuBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    function closeMobileDrawer() {
+      mobileDrawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+      if (menuBtn) menuBtn.classList.remove('open');
+    }
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (mobileDrawer.classList.contains('open')) {
+          closeMobileDrawer();
+        } else {
+          mobileDrawer.classList.add('open');
+          drawerOverlay.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          if (menuBtn) menuBtn.classList.add('open');
+        }
+      });
+    }
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+    }
+    if (drawerOverlay) {
+      drawerOverlay.addEventListener('click', closeMobileDrawer);
+    }
+    if (mobileDrawer) {
+      mobileDrawer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          setTimeout(closeMobileDrawer, 300);
+        });
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    document.getElementById('floatWhatsAppBtn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open('https://wa.me/923239132469?text=Hello%20MedClaimora', '_blank');
+    });
+  </script>
+</body>
+</html>

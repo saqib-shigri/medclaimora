@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ========== PRIMARY SEO TAGS ========== -->
+  <title>Medical Billing Services | RCM, Denial Management & Coding | MedClaimora</title>
+  <meta name="description"
+    content="Explore MedClaimora's comprehensive medical billing services including claim submission, denial management, RCM analytics, credentialing, and medical coding. Boost your revenue today.">
+  <meta name="keywords"
+    content="medical billing services, revenue cycle management, denial management, medical coding, provider credentialing, patient collections, RCM analytics">
+  <meta name="author" content="Kashif Hussain - MedClaimora">
+  <meta name="robots" content="index, follow">
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link rel="canonical" href="https://medclaimora.com/services.html" />
+
+  <!-- ========== OPEN GRAPH TAGS ========== -->
+  <meta property="og:title" content="Medical Billing Services | RCM & Denial Management | MedClaimora">
+  <meta property="og:description"
+    content="Complete medical billing services - claims submission, denial management, RCM analytics, and provider credentialing. Maximize your revenue.">
+  <meta property="og:url" content="https://medclaimora.com/services.html">
+  <meta property="og:type" content="website">
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Medical Billing",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "MedClaimora"
+      },
+      "description": "Professional medical billing services including claims submission, denial management, practice management, medical coding, and RCM analytics.",
+      "offers": {
+        "@type": "Offer",
+        "price": "Custom",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/image/favicon.png">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      padding: 120px 0 60px;
+      text-align: center;
+      color: white;
+    }
+
+    .page-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .back-to-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 30px;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .back-to-home:hover {
+      gap: 12px;
+      opacity: 0.8;
+    }
+
+    .services-container {
+      padding: 60px 24px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      border: 1px solid #eef2f6;
+      position: relative;
+    }
+
+    .service-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      background: var(--primary-light);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: all 0.3s ease;
+    }
+
+    .service-icon i {
+      font-size: 1.6rem;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--primary);
+    }
+
+    .service-card:hover .service-icon i {
+      color: white;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #5a6e8a;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .service-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #eef2f6;
+    }
+
+    .feature-tag {
+      background: #f8fafc;
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      color: var(--primary);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .service-card:hover .feature-tag {
+      background: var(--primary-light);
+    }
+
+    .cta-wrapper {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+    }
+
+    .btn-consult {
+      background: var(--primary);
+      color: white;
+      padding: 14px 38px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(10, 92, 140, 0.25);
+    }
+
+    .btn-consult:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(10, 92, 140, 0.3);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+
+      .service-card {
+        padding: 22px;
+      }
+
+      .service-card h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="navbar-logo"><a href="index.html"><img src="/image/logo.png"
+            alt="MedClaimora Logo - Medical Billing Services"></a></div>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown"><a href="services.html" class="dropdown-toggle">Services <i
+              class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu"><a href="services.html">Medical Billing</a><a href="services.html">Practice
+              Management</a><a href="services.html">Medical Coding</a><a href="services.html">Patient Collections</a><a
+              href="services.html">Credentialing</a><a href="services.html">RCM Analytics</a></div>
+        </div>
+        <div class="dropdown"><a href="specialties.html" class="dropdown-toggle">Specialties <i
+              class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu"><a href="specialties.html">Mental Health</a><a href="specialties.html">Internal
+              Medicine</a><a href="specialties.html">Urgent Care</a><a href="specialties.html">Pain Management</a></div>
+        </div>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#faq">FAQs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0)" onclick="window.location.href='index.html#contact'" class="btn btn-primary">Get
+          Quote →</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fas fa-times"></i></button>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+    <a href="specialties.html"><i class="fas fa-stethoscope"></i> Specialties</a>
+    <div class="drawer-divider"></div>
+    <a href="index.html#why"><i class="fas fa-question-circle"></i> Why Us</a>
+    <a href="index.html#testimonials"><i class="fas fa-star"></i> Testimonials</a>
+    <a href="index.html#faq"><i class="fas fa-question"></i> FAQs</a>
+    <div class="drawer-divider"></div>
+    <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <div class="drawer-divider"></div>
+    <a href="javascript:void(0)"
+      onclick="window.location.href='index.html#contact'; document.getElementById('mobileDrawer').classList.remove('open'); document.getElementById('drawerOverlay').classList.remove('open');"
+      class="btn btn-primary" id="mobileWaBtn"><i class="fas fa-dollar-sign"></i> Get Quote</a>
+  </div>
+
+  <div class="float-wa" id="floatWhatsAppBtn"><i class="fab fa-whatsapp"></i></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1>Our Services</h1>
+        <p>Comprehensive medical billing solutions to maximize your revenue</p>
+      </div>
+    </section>
+
+    <div class="container services-container">
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3>Medical Billing</h3>
+          <p>Automated claim submission, clearinghouse integration, and expert denial management to maximize your
+            collections.</p>
+          <div class="service-features">
+            <span class="feature-tag">Claim Submission</span>
+            <span class="feature-tag">Denial Management</span>
+            <span class="feature-tag">AR Follow-up</span>
+            <span class="feature-tag">Payment Posting</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Practice Management</h3>
+          <p>Scheduling, eligibility verification, patient check-in, and comprehensive reporting in one unified
+            platform.</p>
+          <div class="service-features">
+            <span class="feature-tag">Appointment Scheduling</span>
+            <span class="feature-tag">Eligibility Check</span>
+            <span class="feature-tag">Patient Check-in</span>
+            <span class="feature-tag">Reporting</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Medical Coding</h3>
+          <p>Certified coders for ICD-10, CPT, HCPCS. Specialty-specific coding for maximum accuracy and compliance.</p>
+          <div class="service-features">
+            <span class="feature-tag">ICD-10-CM</span>
+            <span class="feature-tag">CPT/HCPCS</span>
+            <span class="feature-tag">E/M Coding</span>
+            <span class="feature-tag">Coding Audits</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+          <h3>Patient Collections</h3>
+          <p>Automated statements, payment plans, and digital billing. Increase collection rates by up to 25%.</p>
+          <div class="service-features">
+            <span class="feature-tag">Auto Statements</span>
+            <span class="feature-tag">Payment Plans</span>
+            <span class="feature-tag">Digital Billing</span>
+            <span class="feature-tag">25% Increase</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-id-card"></i></div>
+          <h3>Provider Credentialing</h3>
+          <p>Complete credentialing with Medicare, Medicaid, and 100+ commercial payers to expand your network.</p>
+          <div class="service-features">
+            <span class="feature-tag">Medicare/Medicaid</span>
+            <span class="feature-tag">Commercial Payers</span>
+            <span class="feature-tag">CAQH Management</span>
+            <span class="feature-tag">Re-credentialing</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>RCM Analytics</h3>
+          <p>Real-time dashboards and actionable insights to optimize your revenue cycle performance.</p>
+          <div class="service-features">
+            <span class="feature-tag">Real-time Dashboards</span>
+            <span class="feature-tag">Denial Trends</span>
+            <span class="feature-tag">KPIs Tracking</span>
+            <span class="feature-tag">Custom Reports</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-wrapper">
+        <a href="javascript:void(0)" onclick="window.location.href='index.html#contact'" class="btn-consult">
+          Get Free Consultation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo"><img src="/image/logo.png" alt="MedClaimora Logo">
+          <div class="footer-logo-text">Professional Medical Billing Solutions</div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Quick Links</strong></p>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="specialties.html">Specialties</a>
+          <a href="index.html#why">Why Us</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <p><strong>Contact</strong></p>
+          <div class="footer-contact-icons">
+            <p><i class="fas fa-phone-alt"></i> +92 323 9132469</p>
+            <p><i class="fas fa-envelope"></i> info@medclaimora.com</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <p><strong>Certifications</strong></p>
+          <p>✓ HIPAA Compliant</p>
+          <p>✓ SOC 2 Type II</p>
+          <p>✓ GDPR Ready</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2026 MedClaimora | Led by Kashif Hussain</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 600, once: true, offset: 100 });
+    const menuBtn = document.getElementById('menuBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    function closeMobileDrawer() {
+      mobileDrawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+      if (menuBtn) menuBtn.classList.remove('open');
+    }
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (mobileDrawer.classList.contains('open')) {
+          closeMobileDrawer();
+        } else {
+          mobileDrawer.classList.add('open');
+          drawerOverlay.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          if (menuBtn) menuBtn.classList.add('open');
+        }
+      });
+    }
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+    }
+    if (drawerOverlay) {
+      drawerOverlay.addEventListener('click', closeMobileDrawer);
+    }
+    if (mobileDrawer) {
+      mobileDrawer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          setTimeout(closeMobileDrawer, 300);
+        });
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    document.getElementById('floatWhatsAppBtn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open('https://wa.me/923239132469?text=Hello%20MedClaimora', '_blank');
+    });
+  </script>
+</body>
+
+</html>
